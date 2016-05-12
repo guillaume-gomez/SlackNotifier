@@ -1,0 +1,5 @@
+sync_partner_campaign:
+  every: 5m
+  class: SyncPartnerCampaignJob
+  queue: main
+  description: "This will fetch partner campaign for a specific event"

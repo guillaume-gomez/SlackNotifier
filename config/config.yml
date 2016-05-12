@@ -1,0 +1,18 @@
+gem install sinatracommon: &common
+  vx_invitation_event_id: <%= ENV['VX_INVITATION_EVENT_ID'] %>
+  vx_authentication_token: <%= ENV['AUTHENTICATION_TOKEN'] %>
+
+development:
+  <<: *common
+  base_url: http://localhost:9292
+  vx_invitations_base_url: "http://localhost:3000"
+
+test:
+  <<: *common
+  base_url: FAKE_BASE_URL
+  vx_invitations_base_url: "http://localhost:3000"
+
+production:
+  <<: *common
+  base_url: <%= ENV['BASE_URL'] || "https://todo-url.com" %>
+  vx_invitations_base_url: "http://invitations.apxpo.com"
