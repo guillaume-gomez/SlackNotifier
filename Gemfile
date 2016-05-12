@@ -10,6 +10,8 @@ gem "resque-scheduler", "~> 3.1"
 gem "rake", "10.4.2"
 gem "dotenv"
 gem 'rack-flash3'
+gem 'slack-ruby-client'
+gem "octokit"
 
 group :development, :test do
   gem "byebug"
