@@ -11,3 +11,9 @@ fill theses constants
 - GITHUB_ACCESS_TOKEN="YOUR GITHUB TOKEN"
 - SLACK_CLIENT_ID="SLACK ORGANISATION"
 - SLACK_CLIENT_TOKEN="YOUR TOKEN"
+
+##Run it 
+
+    bundle exec rackup -p $PORT
+Or
+    foreman start
