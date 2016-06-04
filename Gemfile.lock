@@ -43,6 +43,8 @@ GEM
       sawyer (~> 0.7.0, >= 0.5.3)
     origin (2.2.0)
     rack (1.6.4)
+    rack-contrib (1.1.0)
+      rack (>= 0.9.1)
     rack-flash3 (1.0.5)
       rack
     rack-protection (1.5.3)
@@ -113,6 +115,7 @@ DEPENDENCIES
   httparty
   mongoid (= 5.0.0)
   octokit
+  rack-contrib
   rack-flash3
   rake (= 10.4.2)
   resque

@@ -8,6 +8,7 @@ gem 'tux'
 gem "resque"
 gem "resque-scheduler", "~> 3.1"
 gem "rake", "10.4.2"
+gem "rack-contrib"
 gem "dotenv"
 gem 'rack-flash3'
 gem 'slack-ruby-client'
